@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compitable" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap模板</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-3.3.7.min.css">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome-4.2.0.min.css">
+    <!-- IE<=9 H5+CSS3补丁  -->
+    <!--[if lte IE 9]>                         
+	   <script src="js/html5shiv.min.js"></script>
+	   <script src="js/respond.min.js"></script>                      
+	<![endif]-->
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" href="">
+	<link rel="icon" href="">
+	<style>
+		/*媒体查询*/
+		@media (min-width: @screen-sm-min) { ... }
+		.nav>li>a{
+			padding:0 15px;
+			font-size:12px;
+			line-height: 1.1em;
+		}
+	</style>
+</head>
+<body>
+<!--布局容器-->
+<div class="container">	<!--container-fluid-->
+	<div class="row">
+		<div class="col-md-2 hidden-sm hidden-xs">
+			<ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="200">
+				<li class="active"><a href="index.html">首页</a></li>
+	            <li><a href="#sgxt">栅格系统</a></li>
+	            <li><a href="#bt">标题</a></li>
+	            <li><a href="#glxs">高亮显示</a></li>
+	            <li><a href="#ztgs">字体格式</a></li>
+	            <li><a href="#dq">对齐</a></li>
+	            <li><a href="#nowrap">Nowrap</a></li>
+	            <li><a href="#dxxzh">大小写转换</a></li>
+	            <li><a href="#sly">缩略语</a></li>
+	            <li><a href="#dzgs">地址格式</a></li>
+	            <li><a href="#yyys">引用样式</a></li>
+	            <li><a href="#lb">列表</a></li>
+	            <li><a href="#nldm">内联代码</a></li>
+	            <li><a href="#srbj">输入标记</a></li>
+	            <li><a href="#dmk">代码块</a></li>
+	            <li><a href="#blbj">变量标记</a></li>
+	            <li><a href="#bgys">表格样式</a></li>
+	            <li><a href="#bd">表单</a></li>
+	            <li><a href="#dx">单选/多选框</a></li>		            
+	            <li><a href="#xllb">下拉列表</a></li>		            
+	            <li><a href="#jyan">禁用按钮</a></li>		            
+	            <li><a href="#dtbsrk">带图标输入框</a></li>		            
+	            <li><a href="#anys">按钮样式</a></li>		            
+	            <li><a href="#xystp">响应式图片</a></li>		            
+	            <li><a href="#tpxz">图片形状</a></li>		            
+	            <li><a href="#wbs">文本色</a></li>		            
+	            <li><a href="#bjs">背景色</a></li>		            
+	            <li><a href="#gbzn">关闭按钮</a></li>		            
+	            <li><a href="#sjfh">三角符号</a></li>		            
+	            <li><a href="#ksfd">快速浮动</a></li>		            
+	            <li><a href="#kysjz">块元素居中</a></li>		            
+	            <li><a href="#qcfd">清除浮动</a></li>		            
+	            <li><a href="#xshyz">显示和隐藏</a></li>		            
+	         </ul>
+		</div> <!--col-md-2-->
+		<div class="col-md-10">
+		  <h3 id="sgxt">栅格系统</h3>
+		  <div class="row text-center">
+			  <div class="col-xs-4">1</div>
+			  <div class="col-xs-4">2</div>
+			  <div class="col-xs-4">3</div>
+		  </div>
+		  <!--标题+副标题-->
+		  <h1 id="bt">标题<small>副标题</small></h1>
+		  <!--突出显示lead-->
+		  <p>没有lead</p>	<!--font-size=14px-->
+		  <p class="lead">有lead</p>		<!--font-size-16px font-weight=300-->
+		  <!--高亮显示-->
+		  <h3 id="glxs"><mark>高亮显示</mark>内容</h3>
+		  <del id="ztgs">被删除的文本</del><br />
+		  <del>无用文本</del><br />
+		  <ins>插入文本</ins><br />
+		  <u>带下划线的文本</u><br />
+		  <small>小号文本,font-size为父元素的85%</small><br />
+		  <strong>着重强调</strong><br />
+		  <em>斜体</em><br />
+		  <h3 id="dq">对齐</h3>
+		  <p class="text-left">Left</p>
+		  <p class="text-center">Center</p>
+		  <p class="text-right">Right</p>
+		  <p class="text-justify">Justified</p>
+		  <p class="text-nowrap">Nowrap，强制在一行显示</p>
+		  <h3 id="dxxzh">大小写转换</h3>
+		  	<p class="text-lowercase">Lowercased text.</p>
+			<p class="text-uppercase">Uppercased text.</p>
+			<p class="text-capitalize">Capitalized text.单词首字母大写</p>
+			<h3 id="sly">缩略语</h3>
+			<abbr title="attribute">attr</abbr> 鼠标hover attr出现完整的提示
+			<!--地址-->
+			<h2 id="dzgs">地址样式</h2>
+			<address>
+			  <strong>北京某某技术公司</strong><br>
+			  朝阳区某大街东方大厦101号<br>
+			  <abbr title="Phone">P:</abbr> (010) 456-7890
+			</address>
+			
+			<address>
+			  <strong>李经理</strong><br>
+			  <a href="mailto:#">first.last@example.com</a>
+			</address>
+		
+			<blockquote id="yyys"> <!--class="blockquote-reverse"-->
+			  <p>引用样式</p>
+			   <footer>摘抄于<cite title="Source Title">青年文摘</cite></footer>
+			</blockquote>
+			<!--无样式列表-->
+			<ul id="lb" class="list-unstyled">
+			  <li>无样式列表</li>
+			  <li>无样式列表</li>
+			  <li>无样式列表</li>
+			</ul>
+			<!--内联列表-->
+			<ul class="list-inline">
+			  <li>内联列表</li>
+			  <li>内联列表</li>
+			  <li>内联列表</li>
+			  <li>内联列表</li>
+			</ul>
+			<!--描述列表-->
+			<dl>
+			  <dt>标题</dt>
+			  <dd>描述内容描述列表</dd>
+			</dl>
+			<dl class="dl-horizontal">
+			  <dt>标题</dt>
+			  <dd>水平排列的描述</dd>
+			</dl>
+			<p id="nldm">内联代码：这是<code>内联样式代码</code></p>
+			<p id="srbj">用户输入标记:<kbd>Enter</kbd></p>
+			<p id="dmk"><pre>代码块区域</pre></p>
+			<p id="blbj">变量标记：<var>x</var></p>
+			<p><samp>程序输出内容</samp></p>
+			<h3 id="bgys">表格样式</h3>
+			<h4>基本表格</h4>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>编号</th>
+						<th>姓名</th>
+						<th>性别</th>
+					</tr>
+				</thead>
+				<tr>
+					<td>01</td>
+					<td>张三</td>
+					<td>男</td>
+				</tr>
+				<tr>
+					<td>02</td>
+					<td>李四</td>
+					<td>男</td>
+				</tr>
+				<tr>
+					<td>03</td>
+					<td>王五</td>
+					<td>女</td>
+				</tr>
+			</table>
+			<h4>条纹状表格</h4>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>编号</th>
+						<th>姓名</th>
+						<th>性别</th>
+					</tr>
+				</thead>
+				<tr>
+					<td>01</td>
+					<td>张三</td>
+					<td>男</td>
+				</tr>
+				<tr>
+					<td>02</td>
+					<td>李四</td>
+					<td>男</td>
+				</tr>
+				<tr>
+					<td>03</td>
+					<td>王五</td>
+					<td>女</td>
+				</tr>
+				
+			</table>
+			<h4>带边框表格</h4>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>编号</th>
+						<th>姓名</th>
+						<th>性别</th>
+					</tr>
+				</thead>
+				<tr>
+					<td>01</td>
+					<td>张三</td>
+					<td>男</td>
+				</tr>
+				<tr>
+					<td>02</td>
+					<td>李四</td>
+					<td>男</td>
+				</tr>
+				<tr>
+					<td>03</td>
+					<td>王五</td>
+					<td>女</td>
+				</tr>
+				
+			</table>
+			<h4>鼠标悬停效果表格</h4>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>编号</th>
+						<th>姓名</th>
+						<th>性别</th>
+					</tr>
+				</thead>
+				<tr>
+					<td>01</td>
+					<td>张三</td>
+					<td>男</td>
+				</tr>
+				<tr>
+					<td>02</td>
+					<td>李四</td>
+					<td>男</td>
+				</tr>
+				<tr>
+					<td>03</td>
+					<td>王五</td>
+					<td>女</td>
+				</tr>
+				
+			</table>
+			<h4>紧缩表格</h4>
+			<table class="table table-condensed">
+				<thead>
+					<tr>
+						<th>编号</th>
+						<th>姓名</th>
+						<th>性别</th>
+					</tr>
+				</thead>
+				<tr>
+					<td>01</td>
+					<td>张三</td>
+					<td>男</td>
+				</tr>
+				<tr>
+					<td>02</td>
+					<td>李四</td>
+					<td>男</td>
+				</tr>
+				<tr>
+					<td>03</td>
+					<td>王五</td>
+					<td>女</td>
+				</tr>
+				
+			</table>
+			<h3 id=bd">普通表单</h3>
+			<form>
+			  <div class="form-group">
+				<label for="exampleInputEmail1">邮箱地址</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入邮箱">
+			  </div>
+			</form>
+			<h3>内联表单</h3>
+			<form class="form-inline">
+			  <div class="form-group">
+			    <label for="exampleInputName2">姓名</label>
+			    <input type="text" class="form-control" id="exampleInputName2" placeholder="请输入姓名">
+			  </div>
+			</form>
+			<form class="form-inline">
+			  <div class="form-group">
+			    <label class="sr-only" for="exampleInputAmount">金额 (人民币)</label>
+			    <div class="input-group">
+			      <div class="input-group-addon">￥</div>
+			      <input type="text" class="form-control" id="exampleInputAmount" placeholder="金额">
+			    </div>
+			  </div>
+			  <button type="submit" class="btn btn-primary">换算</button>
+			</form>
+			<h3>登录通用表单</h3>
+			<form class="form-horizontal">
+			  <div class="form-group">
+			    <label for="inputUname" class="col-sm-2 control-label">用户名</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" id="inputUname" placeholder="请输入用户名">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputPassword" class="col-sm-2 control-label">密码</label>
+			    <div class="col-sm-10">
+			      <input type="password" class="form-control" id="inputPassword" placeholder="请输入密码">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <div class="checkbox">
+			        <label>
+			          <input type="checkbox"> 记住用户名
+			        </label>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="submit" class="btn btn-default">登录</button>
+			    </div>
+			  </div>
+			</form>
+			<!--输入框-->
+			<input type="text" class="form-control" placeholder="输入框">
+			<textarea class="form-control" rows="2" style="resize: none;">文本域</textarea>
+			<h3 id="dx">单选框</h3>
+			<div class="radio">
+			  <label>
+			    <input type="radio" name="optionsRadios" value="male" checked>男
+			  </label>
+			</div>
+			<div class="radio">
+			  <label>
+			    <input type="radio" name="optionsRadios" value="female">女
+			  </label>
+			</div>
+			<h3>多选框</h3>
+			<label class="checkbox-inline">
+			  <input type="checkbox" id="inlineCheckbox1" value="1"> 1
+			</label>
+			<label class="checkbox-inline">
+			  <input type="checkbox" id="inlineCheckbox2" value="2"> 2
+			</label>
+			<label class="checkbox-inline">
+			  <input type="checkbox" id="inlineCheckbox3" value="3"> 3
+			</label>
+			<h3 id="xllb">下拉列表</h3>
+			<select class="form-control">
+			  <option>北京</option>
+			  <option>上海</option>
+			  <option>广州</option>
+			</select>
+			<h3 id="jyan">禁用按钮</h3>
+			<input type="button" value="提交" class="btn btn-danger" disabled/>
+			<button class="btn btn-info" disabled>确定</button>
+			<h3 id="dtbsrk">带图标输入框</h3>
+			<div class="form-group has-error has-feedback">
+			  <input type="text" class="form-control" placeholder="请输入……"/>
+			  <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+			  <span class="sr-only">(success)</span>
+			</div>
+			<div class="form-group has-success has-feedback">
+			  <input type="text" class="form-control" placeholder="请输入……"/>
+			  <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+			</div>
+			<h3 id="anys">按钮样式</h3>
+			<button type="button" class="btn btn-default">（默认样式）Default</button>
+			<button type="button" class="btn btn-primary">（首选项）Primary</button>
+			<button type="button" class="btn btn-success">（成功）Success</button>
+			<button type="button" class="btn btn-info">（一般信息）Info</button>
+			<button type="button" class="btn btn-warning">（警告）Warning</button>
+			<button type="button" class="btn btn-danger">（危险）Danger</button>
+			<button type="button" class="btn btn-link">（链接）Link</button>
+			<button type="button" class="btn btn-default" style="background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);">自定义样式</button>
+			<h3 id="xystp">响应式图片</h3>
+			<img src="http://lorempixel.com/400/200/" class="img-responsive" alt="Responsive image">
+			<h3 id="tpxz">图片形状</h3>
+			<img src="http://lorempixel.com/200/200/" alt="..." class="img-rounded">
+			<img src="http://lorempixel.com/301/301/" alt="..." class="img-circle">
+			<img src="http://lorempixel.com/300/300/" alt="..." class="img-thumbnail">
+			<h3 id="wbs">文本色</h3>
+			<p class="text-muted">text-muted...</p>
+			<p class="text-primary">text-primary...</p>
+			<p class="text-success">text-success...</p>
+			<p class="text-info">text-info...</p>
+			<p class="text-warning">ext-warning...</p>
+			<p class="text-danger">text-danger...</p>
+			<h3 id="bjs">背景色</h3>
+		 	<p class="bg-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+		    <p class="bg-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+		    <p class="bg-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+		    <p class="bg-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+		    <p class="bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+		    <h3 id="gban">关闭按钮</h3>
+			<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h3 id="sjfh">三角符号</h3>
+			<span class="caret"></span>
+			<h3 id="ksfd">快速浮动</h3>	<!--导航条中用.navbar-left 或 .navbar-right-->
+			<div class="pull-left">pull-left</div>
+			<div class="pull-right">pull-right</div>
+			<br />
+			<h3 id="kysjz">块元素居中</h3>
+			<div class="center-block" style="width:300px;height:200px;background-color:grey;"></div>
+			<h3 id="qcfd" class="clearfix">清楚浮动class="clearfix"</h3>
+			<h3 id="xshyz">显示或隐藏:.show/.hidden/.invisible</h3>
+			<h3>隐藏文字</h3>
+			<h1 class="text-hide">Custom heading</h1>
+		</div> <!--col-md-10-->
+	</div> <!--row-->
+	
+<!--container end-->	
+</div>
+
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/bootstrap-3.3.7.min.js"></script>
+</body>
+</html>

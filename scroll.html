@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compitable" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap模板</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-3.3.7.min.css">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome-4.2.0.min.css">
+    <!-- IE<=9 H5+CSS3补丁  -->
+    <!--[if lte IE 9]>                         
+	   <script src="js/html5shiv.min.js"></script>
+	   <script src="js/respond.min.js"></script>                      
+	<![endif]-->
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" href="">
+	<link rel="icon" href="">
+</head>
+<body data-spy="scroll" data-target=".container1" style="padding:0 20px 0;margin-top:70px;">
+	<div class="container1">
+		<!--导航区-->
+	    <nav id="navbar-example2" class="navbar navbar-default navbar-fixed-top">
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+	          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="#1">logo</a>
+	        </div>
+	        <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+	          <ul class="nav navbar-nav">
+	            <li><a href="#red">red</a></li>
+	            <li><a href="#green">green</a></li>
+	            <li class="dropdown">
+	              <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">blue <span class="caret"></span></a>
+	              <ul class="dropdown-menu" aria-labelledby="navbarDrop1">
+	                <li><a href="#one">blue1</a></li>
+	                <li><a href="#two">blue2</a></li>
+	                <li role="separator" class="divider"></li>
+	                <li><a href="#three">blue3</a></li>
+	              </ul>
+	            </li>
+	          </ul>
+	        </div>
+	      </div>
+	    </nav>
+	    <!--内容区-->
+	    <div data-offset="10" class="scrollspy-example">
+	      <h4 id="red">red</h4>
+	      <p style="height:500px;background: red;;"></p>
+	      <h4 id="green">green</h4>
+	      <p style="height:500px;background: green;"></p>
+	      <h4 id="one">blue1</h4>
+	      <p style="height:200px;background: blue;"></p>
+	      <h4 id="two">blue2</h4>
+	      <p style="height:200px;background: dodgerblue;"></p>
+	      <h4 id="three">blue3</h4>
+	      <p style="height:300px;background: cornflowerblue;"></p>
+	    </div>
+	</div><!-- /example -->
+
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/bootstrap-3.3.7.min.js"></script>
+</body>
+</html>
